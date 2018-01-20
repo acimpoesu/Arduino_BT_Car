@@ -2,7 +2,7 @@
 
 
  
-  Car::Car(byte servoPin,byte MotIN1, byte MotIN2, byte MotENA, byte MotENB = 0, byte MotIN3 = 0, byte MotIN4 = 0)
+  Car::Car(byte servoPin,byte MotIN1, byte MotIN2, byte MotENA, byte MotENB, byte MotIN3, byte MotIN4)
   {
     _MotIN1 = MotIN1;
     _MotIN2 = MotIN2;
@@ -39,7 +39,7 @@
     _fw_bw_stop = CAR_STOP;
     _l_r_straight = CAR_STRAIGHT;
   }
-  void Car::init(byte SERVO_LEFT,byte SERVO_STRAIGHT,byte SERVO_RIGHT,byte CAR_SPEED, byte _motor_reversed = 0, byte _servo_reversed = 0)
+  void Car::init(byte SERVO_LEFT,byte SERVO_STRAIGHT,byte SERVO_RIGHT,byte CAR_SPEED, byte _motor_reversed, byte _servo_reversed)
   {
     _SERVO_LEFT=SERVO_LEFT;
     _SERVO_STRAIGHT=SERVO_STRAIGHT;
